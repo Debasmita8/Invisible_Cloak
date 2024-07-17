@@ -24,9 +24,9 @@ while cap.isOpened():
     ret, frame = cap.read()
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # lower bound and upper bound for black color 
-    lower_bound = np.array([0, 0, 0])
-    upper_bound = np.array([180, 255, 30])
+    # lower bound and upper bound for red color 
+    lower_bound = np.array([0, 100, 100])
+    upper_bound = np.array([10, 255, 255])
     
     mask = cv2.inRange(hsv, lower_bound, upper_bound)
     mask = filter_mask(mask)
