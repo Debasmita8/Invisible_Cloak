@@ -1,1 +1,2 @@
 # invisible-clock
+# This is a Harry Potter's Invisible Cloak inspired project using OpenCV python library. Any red colored cloth will be converted into the background color. This project uses an Image processing technique called color detection and segmentation. In order to make the cloth fully invisible, it needs to be of a single color(red). After the cam opens, some time is to be given for the background to be stored. The background and the cloth has to be of different colors for better understanding.
